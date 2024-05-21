@@ -69,18 +69,18 @@ const EditorsPick = () => {
       </div>
       <div className="">
         {editorsPick.map((x) => (
-          <div key={x.id}>
+          <div key={x?.id}>
             <div className=" h-[1px] my-[3px] w-full bg-gray-400"></div>
             <div className=" py-[15px] grid grid-cols-3">
               <div className=" col-span-1 m-[5px] overflow-hidden">
                 <div className="bg-cover  relative bg-center h-full group ">
                   <div className=" ">
-                    <img className=" " src={x.image} alt="" />
+                    <img className=" " src={x?.image} alt="" />
                   </div>
                 </div>
               </div>
               <div className=" pl-5 col-span-2">
-                <h2 className=" text-sm font-[sans-serif] font-semibold">{x.heading}</h2>
+                <h2 className=" text-sm font-[sans-serif] font-semibold">{x?.heading}</h2>
                 <div>
                   <div className=" flex flex-row my-[10px] text-gray-400  text-xs font-normal">
                     <div className="flex justify-center ml-2 align-middle text-center">

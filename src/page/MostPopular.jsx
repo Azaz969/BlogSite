@@ -37,18 +37,18 @@ const MostPopular = () => {
       <h3 className="bg-black text-sm font-bold text-slate-50 mb-5 py-[10px] px-6 ">Most Popular</h3>
       <div>
       {mostPopular.map((x, i) => (
-          <div key={x.id} className={ i===3? " border-b-[0px] border-solid" : " border-b border-solid border-gray-400"} >
+          <div key={x?.id} className={ i===3? " border-b-[0px] border-solid" : " border-b border-solid border-gray-400"} >
             
             <div className=" py-[15px] grid grid-cols-3">
               <div className=" col-span-1 m-[5px] overflow-hidden">
                 <div className="bg-cover  relative bg-center h-full group ">
                   <div className=" ">
-                    <img className=" " src={x.image} alt="" />
+                    <img className=" " src={x?.image} alt="" />
                   </div>
                 </div>
               </div>
               <div className=" pl-5 col-span-2">
-                <h2 className=" text-sm font-[sans-serif] font-semibold">{x.heading}</h2>
+                <h2 className=" text-sm font-[sans-serif] font-semibold">{x?.heading}</h2>
                 <div>
                   <div className=" flex flex-row my-[10px] text-gray-400  text-xs font-normal">
                     <div className="flex justify-center ml-2 align-middle text-center">
