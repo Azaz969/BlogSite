@@ -20,7 +20,7 @@ const EditorsPick = () => {
     },
     {
       category: "Travel",
-      id: "2",
+      id: "3",
       heading: "5 Tips For Offshore Soft Development",
       image: "https://preview.colorlib.com/theme/magazine/img/e4.jpg",
       details: "Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.",

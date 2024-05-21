@@ -1,5 +1,6 @@
-import { Collapse, ConfigProvider, theme } from "antd";
-import { FaAngleDown } from "react-icons/fa6";
+import { Collapse, ConfigProvider, theme,  } from "antd";
+import { FaAngleDown } from "react-icons/fa";
+
 
 
 const getItems = (panelStyle) => [
@@ -87,11 +88,11 @@ const AboutGoal = () => {
             className=" w-full h-full "
             bordered={false}
             defaultActiveKey={["1"]}
-            // expandIcon={({ isActive }) => <FaAngleDown rotate={isActive ? 90 : 0} />}
-            // style={{
-            //   background: token.colorBgContainer,
-            // }}
-            // items={getItems(panelStyle)}
+            expandIcon={({ isActive }) => <FaAngleDown rotate={isActive ? 90 : 0} />}
+            style={{
+              background: token.colorBgContainer,
+            }}
+            items={getItems(panelStyle)}
           />
           </ConfigProvider>
 
@@ -104,9 +105,9 @@ const AboutGoal = () => {
               height="315"
               src="https://www.youtube.com/embed/ARA0AxrnHdM?si=wM_xSQ9ucmWX8BCi"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
           </var>

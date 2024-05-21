@@ -46,7 +46,7 @@ const Header = () => {
     <div className=" sticky top-0 shadow-lg z-50">
       <div className=" flex  justify-between align-middle bg-black p-5 text-base">
         <div>
-          <NavLink className={({ isActive }) => (isActive ? "text-orange-600 m-3" : "text-slate-300 m-2")} to="/">
+            <NavLink className={({ isActive }) => (isActive ? "text-orange-600 m-3" : "text-slate-300 m-2")} to="/">
             HOME
           </NavLink>
           <NavLink
