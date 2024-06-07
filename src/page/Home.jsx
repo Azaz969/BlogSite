@@ -20,24 +20,24 @@ const Home = () => {
               />
             </div>
             <div className="h-full z-10 bg-transparent  text-slate-50 bg-cover bg-center ">
-              <div className=" z-10 grid grid-flow-row gap-4 absolute bottom-[30px] left-[40px]">
-                <Link to="/" className=" p-2 w-36 text-center bg-red-600">
+              <div className=" z-10 grid grid-flow-row md:gap-4 absolute md:bottom-[30px] bottom-3 md:left-[40px] left-3">
+                <Link to="/" className=" md:p-2 p-1 md:w-36 w-32 text-center bg-red-600">
                   Food Habit
                 </Link>
                 <Link to="/" className=" md:text-2xl text-[14px] my-[5px]  font-bold inset-0 font-[poppins]">
                   A Discount Toner Cartridge Is Better Than Ever.
                 </Link>
-                <div className="grid grid-flow-col">
-                  <div>
-                    <CgProfile /> Make wiens
+                <div className=" flex flex-row gap-[1px] text-xs font-normal">
+                    <div className="flex justify-center align-middle text-center">
+                      <CgProfile className=" h-4 w-4 mr-[2px]" /> <p className=" ml-[2px]">Make wiens</p>
+                    </div>
+                    <div className="flex justify-center ml-2 align-middle text-center">
+                      <FaCalendarAlt className=" h-4 w-4 mr-[2px]" /> <p className=" ml-[2px]">28-April-2024</p>
+                    </div>
+                    <div className="flex justify-center ml-2 align-middle text-center">
+                      <FaRegComment className=" h-4 w-4 mr-[2px]" /> <p className=" ml-[2px]">o6 Comment</p>
+                    </div>
                   </div>
-                  <div>
-                    <FaCalendarAlt /> 28-April-2024
-                  </div>
-                  <div>
-                    <FaRegComment /> o6 Comment
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Home = () => {
                   <Link to="/" className=" py-1 px-3 w-28 text-center bg-red-600">
                     Food Habit
                   </Link>
-                  <Link to="/" className=" text-lg font-bold my-2 inset-0 font-[poppins]">
+                  <Link to="/" className=" md:text-lg text-[14px] font-bold my-2 inset-0 font-[poppins]">
                     A Discount Toner Cartridge Is Better Than Ever.
                   </Link>
                   <div className=" flex flex-row gap-[1px] text-xs font-normal">
@@ -87,7 +87,7 @@ const Home = () => {
                   <Link to="/" className=" py-1 px-3 w-28 text-center bg-red-600">
                     Food Habit
                   </Link>
-                  <Link to="/" className=" text-lg font-bold my-2 inset-0 font-[poppins]">
+                  <Link to="/" className=" md:text-lg text-[14px] font-bold my-2 inset-0 font-[poppins]">
                     A Discount Toner Cartridge Is Better Than Ever.
                   </Link>
                   <div className=" flex flex-row gap-[1px] text-xs font-normal">
