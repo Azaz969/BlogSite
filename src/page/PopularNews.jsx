@@ -25,19 +25,19 @@ const PopularNews = () => {
       <h3 className="bg-black text-sm mb-5 font-bold text-slate-50 py-[10px] px-6 ">Popular News</h3>
 
       <div className="">
-        <div className="  bg-cover relative bg-center h-full group overflow-hidden ">
-          <div className="  md:absolute inset-0 h-full brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110">
-            <img className="md:w-full h-full block" src="https://preview.colorlib.com/theme/magazine/img/f1.jpg" alt="" />
+        <div className="   relative bg-center h-full group overflow-hidden ">
+          <div className=" inset-0 bg-cover w-full h-full brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110">
+            <img className="w-full h-48 md:h-full " src="https://preview.colorlib.com/theme/magazine/img/f1.jpg" alt="" />
           </div>
           <div className="h-full z-10 bg-transparent  text-slate-50 bg-cover bg-center ">
-            <div className=" z-10 grid grid-flow-row gap-4 absolute md:bottom-[30px] bottom-3 md:left-[40px] left-3">
+            <div className=" z-10 grid grid-flow-row md:gap-4 absolute md:bottom-[30px] bottom-3 md:left-[40px] left-3">
               <Link to="/" className=" md:p-2 p-1 md:w-36 w-32 text-center bg-red-600">
                 Food Habit
               </Link>
-              <Link to="/" className=" md:text-2xl text-[20px] md:my-[5px]   font-bold inset-0 font-[poppins]">
+              <Link to="/" className=" md:text-2xl text-[16px] md:my-[5px]   font-bold inset-0 font-[poppins]">
                 A Discount Toner Cartridge Is Better Than Ever.
               </Link>
-              <div className="grid grid-flow-col">
+              <div className="grid text-xs grid-flow-col">
                 <div>
                   <CgProfile /> Make wiens
                 </div>
