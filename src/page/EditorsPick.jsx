@@ -79,7 +79,7 @@ const EditorsPick = () => {
                   </div>
                 </div>
               </div>
-              <div className=" pl-5 col-span-2">
+              <div className=" md:pl-5 col-span-2">
                 <h2 className=" text-sm font-[sans-serif] font-semibold">{x?.heading}</h2>
                 <div>
                   <div className=" flex flex-row my-[10px] text-gray-400  text-xs font-normal">

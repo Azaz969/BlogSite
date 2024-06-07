@@ -26,15 +26,15 @@ const PopularNews = () => {
 
       <div className="">
         <div className="  bg-cover relative bg-center h-full group overflow-hidden ">
-          <div className="  inset-0 brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110">
-            <img className=" w-full" src="https://preview.colorlib.com/theme/magazine/img/f1.jpg" alt="" />
+          <div className="  md:absolute inset-0 h-full brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110">
+            <img className="md:w-full h-full block" src="https://preview.colorlib.com/theme/magazine/img/f1.jpg" alt="" />
           </div>
           <div className="h-full z-10 bg-transparent  text-slate-50 bg-cover bg-center ">
-            <div className=" z-10 grid grid-flow-row gap-4 absolute bottom-[30px] left-[40px]">
-              <Link to="/" className=" p-2 w-36 text-center bg-red-600">
+            <div className=" z-10 grid grid-flow-row gap-4 absolute md:bottom-[30px] bottom-3 md:left-[40px] left-3">
+              <Link to="/" className=" md:p-2 p-1 md:w-36 w-32 text-center bg-red-600">
                 Food Habit
               </Link>
-              <Link to="/" className=" text-2xl font-bold inset-0 font-[sans-serif]">
+              <Link to="/" className=" md:text-2xl text-[20px] md:my-[5px]   font-bold inset-0 font-[poppins]">
                 A Discount Toner Cartridge Is Better Than Ever.
               </Link>
               <div className="grid grid-flow-col">
@@ -54,7 +54,7 @@ const PopularNews = () => {
       </div>
 
       <div>
-        <div className=" grid grid-cols-2 gap-5 ">
+        <div className=" grid md:grid-cols-2 gap-5 ">
           {popularNews.map((x) => (
             // <div key={x?.id} className={i === 0 ? "col-span-2" : "col-span-1"}></div>
             <div key={x?.id}>
