@@ -1,0 +1,29 @@
+export const relaventStories = [
+  {
+    category: "Lifestyle",
+    id: "1",
+    heading: "A Discount Toner Cartridge Is Better Than Ever.",
+    image: "https://preview.colorlib.com/theme/magazine/img/r1.jpg",
+    details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+  },
+  {
+    category: "Science",
+    id: "2",
+    heading: "A Discount Toner Cartridge Is Better Than Ever.",
+    image: "https://preview.colorlib.com/theme/magazine/img/r2.jpg",
+    details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+  },
+  {
+    category: "Travel",
+    id: "3",
+    heading: "A Discount Toner Cartridge Is Better Than Ever.",
+    image: "https://preview.colorlib.com/theme/magazine/img/r3.jpg",
+    details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+  },
+];
+
+export const findStories = (item, id) => {
+  item?.find((x) => (x.id === id ? x : null));
+};
+
+// findStories(relaventStories, 1)

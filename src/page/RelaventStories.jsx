@@ -1,32 +1,9 @@
 import { CgProfile } from "react-icons/cg";
 import { FaCalendarAlt, FaRegComment } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { relaventStories } from "../utils/utils";
 
 const RelaventStories = () => {
-  const relaventStories = [
-    {
-      category: "Lifestyle",
-      id: "1",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/r1.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-    {
-      category: "Science",
-      id: "2",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/r2.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-    {
-      category: "Travel",
-      id: "3",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/r3.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-  ];
-
   return (
     <div className=" bg-white p-5">
       <h3 className="bg-black text-sm font-bold text-slate-50 py-[10px] px-6 ">Relavent Stories</h3>
