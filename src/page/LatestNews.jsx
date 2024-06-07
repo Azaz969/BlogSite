@@ -39,7 +39,7 @@ const LatestNews = () => {
       <h3 className="bg-black text-sm font-bold text-slate-50 py-[10px] px-6 ">Latest News</h3>
       {latestNews.map((x) => (
         <div key={x?.id}>
-          <div className="grid md:grid-cols-5 m-5 group ">
+          <div className="grid md:grid-cols-5 md:m-5 group ">
             <div className="md:col-span-2 col-span-5 m-[5px] overflow-hidden">
               <div className="bg-cover  relative bg-center h-full  ">
                 <div className=" inset-0 brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110 ">
