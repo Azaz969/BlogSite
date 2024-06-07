@@ -8,7 +8,7 @@ const onFinishFailed = (errorInfo) => {
 };
 const ContactForm = () => (
   <Form name="basic" layout="vertical" onFinish={onFinish} onFinishFailed={onFinishFailed} autoComplete="off">
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gap-6">
       <div>
         <Form.Item
         

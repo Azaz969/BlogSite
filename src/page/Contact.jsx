@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className=" text-center text-white p-16 bg-red-600 mx-[52px] mt-3 ">
+      <div className=" text-center text-white p-16 bg-red-600 md:mx-[52px] mx-[15px] mt-3 ">
         <h2 className=" text-5xl mb-5 align-middle">Contact Us</h2>
         <div className=" text-center text-sm flex align-middle justify-center mb-4">
           <Link>Home</Link>
@@ -16,7 +16,7 @@ const Contact = () => {
           <Link className=" ml-2">Contact Us</Link>
         </div>
       </div>
-      <div className="mx-[52px] mt-3 grid grid-flow-row p-5 bg-white">
+      <div className="md:mx-[52px] mx-[15px] mt-3 grid grid-flow-row p-5 bg-white">
         <div className="mb-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14694.356257425028!2d89.82240424999999!3d22.96535645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1715175154291!5m2!1sen!2sbd"
@@ -28,7 +28,7 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className=" grid grid-cols-8 mt-4">
+        <div className=" grid md:grid-cols-8 mt-4">
           <div className=" col-span-2 px-[15px]">
             <div className=" grid grid-flow-col">
               <div className=" text-[30px]  font-medium leading-[1] text-[#f6214b]">

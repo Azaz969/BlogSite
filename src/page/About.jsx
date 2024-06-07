@@ -7,7 +7,7 @@ import AboutGoal from "./AboutGoal";
 const About = () => {
   return (
     <div>
-      <div className=" text-center text-white p-16 bg-red-600 mx-[52px] mt-3 ">
+      <div className=" text-center text-white p-16 bg-red-600 md:mx-[52px] mx-[15px] mt-3 ">
         <h2 className=" text-5xl mb-5 align-middle">About Us</h2>
         <div className=" text-center text-sm flex align-middle justify-center mb-4">
           <Link>Home</Link>

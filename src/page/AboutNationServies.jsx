@@ -4,7 +4,7 @@ import { IoDiamondOutline } from "react-icons/io5";
 const AboutNationServies = () => {
   return (
     <div>
-      <div className=" grid grid-cols-2 bg-white ">
+      <div className=" grid md:grid-cols-2 bg-white ">
         <div className=" h-full w-full">
           <img
             className=" h-full"
@@ -12,7 +12,7 @@ const AboutNationServies = () => {
             alt=""
           />
         </div>
-        <div className="grid grid-cols-2 pl-[50px] py-[120px]">
+        <div className="grid grid-cols-2 px-[50px] py-[120px]">
           <div className=" col-span-2">
             <h2 className="text-[36px] mb-5 leading-[1.2em] font-sans font-bold">
               Who we are <br /> to Serve the nation

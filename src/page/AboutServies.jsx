@@ -3,8 +3,8 @@ import { IoAlarmOutline, IoSunnyOutline } from "react-icons/io5";
 
 const AboutServies = () => {
   return (
-    <div className=" py-[120px] mx-[52px] mt-3">
-      <div className=" grid grid-cols-3">
+    <div className=" py-[120px] md:mx-[52px] mx-[15px] mt-3">
+      <div className=" grid md:grid-cols-3 md:gap-0 gap-3">
         <div className=" px-[15px] flex align-top group">
           <div className="">
             <div className=" p-5 text-2xl mr-[30px] rounded bg-white group-hover:bg-red-600 text-black group-hover:text-white">

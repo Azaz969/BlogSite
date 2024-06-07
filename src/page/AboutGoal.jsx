@@ -64,15 +64,15 @@ const AboutGoal = () => {
   };
 
   return (
-    <div className=" py-[120px] mx-[52px] mt-3">
+    <div className=" py-[120px] md:mx-[52px] mx-[15px] mt-3">
       <div className=" pb-[50px] px-[15px] text-center">
         <h2 className=" mb-[10px] text-4xl leading-[1.2em] font-bold font-sans">Goals to Achieve for the leadership</h2>
         <p className="text-[16px] mb-4 leading-[1.625em] text-[#777777] font-sans font-light">
           Who are in extremely love with eco friendly system..
         </p>
       </div>
-      <div className=" grid grid-cols-2">
-        <div className="  px-[15px]">
+      <div className=" grid md:grid-cols-2 gap-5">
+        <div className=" overflow-hidden p-[15px]">
           <ConfigProvider
             theme={{
               components: { 
@@ -98,10 +98,11 @@ const AboutGoal = () => {
 
          
         </div>
-        <div className=" px-[15px]">
+        <div className=" px-[20px]">
           <var>
             <iframe
-              width="560"
+            className=" w-full md:w-[560px]"
+              
               height="315"
               src="https://www.youtube.com/embed/ARA0AxrnHdM?si=wM_xSQ9ucmWX8BCi"
               title="YouTube video player"
