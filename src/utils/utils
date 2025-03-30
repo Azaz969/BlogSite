@@ -26,4 +26,4 @@ export const findStories = (item, id) => {
   item?.find((x) => (x.id === id ? x : null));
 };
 
-// findStories(relaventStories, 1)
+//  findStories(relaventStories, 1)

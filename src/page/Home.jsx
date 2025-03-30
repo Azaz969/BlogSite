@@ -6,7 +6,7 @@ import Home2nd from "./Home2nd";
 const Home = () => {
   return (
     <div className="md:mx-[52px] mx-[15px]">
-      <div className="  md:h-[80vh] h-auto grid md:grid-cols-3  grid-cols-1 max-sm:grid-flow-row md:gap-3 gap-y-3  overflow-hidden">
+      <div className="  md:h-[80vh] flex-shrink-0 h-auto grid md:grid-cols-3  grid-cols-1 max-sm:grid-flow-row md:gap-3 gap-y-3  overflow-hidden">
         <div className="col-span-2 max-sm: w-full   overflow-hidden">
           <div
             className="relative  h-full group "
@@ -14,7 +14,7 @@ const Home = () => {
           >
             <div className=" md:absolute inset-0 brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110">
               <img
-                className="md:w-full h-full block"
+                className="md:w-full md:flex-shrink-0 h-full block"
                 src="https://preview.colorlib.com/theme/magazine/img/top-post1.jpg"
                 alt=""
               />

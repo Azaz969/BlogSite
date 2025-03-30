@@ -97,7 +97,7 @@ const Header = () => {
                 onOpenChange={handleOpenChange}
                 open={open}
               >
-                <Link className=" pr-[30px]" onClick={(e) => e.preventDefault()}>
+                <Link className=" m-3" onClick={(e) => e.preventDefault()}>
                   <Space>
                     POST TYPE
                     <IoChevronDown />
@@ -121,21 +121,18 @@ const Header = () => {
           <div className="md:flex justify-center align-middle ">
             {}
 
-            <IoIosSearch
-              onClick={() => setSearch(!search)}
-              className={`text-slate-300 text-2xl mt-3 mx-4 ${search && " hidden"}`}
-            />
             {search ? (
               <Form inline>
                 <Row>
                   <Col className=" " xs="auto">
-                    <Form.Control type="text" placeholder="Search" className=" md:w-72 p-1 " />
+                    <Form.Control type="text" placeholder="Search" className=" md:w-72 p-1 my-auto mr-3 " />
                   </Col>
                 </Row>
               </Form>
             ) : (
               ""
             )}
+            <IoIosSearch onClick={() => setSearch(!search)} className={`text-slate-300 text-2xl m-auto ${search}`} />
           </div>
         </div>
       </div>

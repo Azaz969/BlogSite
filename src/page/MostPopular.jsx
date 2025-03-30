@@ -38,7 +38,7 @@ const MostPopular = () => {
   const [mostPopular, setMostPopular] = useState([]);
 
   const fetchData = async () => {
-    const { data } = await axios.get("/json/mostPopular.json");
+    const { data } = await axios.get("/relaventStories?_sort=-views&_limit=5");
     setMostPopular(data);
     // const findData = data.find((item) => item.id === "1");
     // console.log({ findData });

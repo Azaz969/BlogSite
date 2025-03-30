@@ -8,17 +8,26 @@ const PopularNews = () => {
       category: "Travel",
       id: "1",
       heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/f2.jpg",
+      image: "https://preview.colorlib.com/theme/magazine/img/f1.jpg",
       details: "Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.",
     },
     {
       category: "Travel",
       id: "2",
       heading: "A Discount Toner Cartridge Is Better Than Ever.",
+      image: "https://preview.colorlib.com/theme/magazine/img/f2.jpg",
+      details: "Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.",
+    },
+    {
+      category: "Travel",
+      id: "3",
+      heading: "A Discount Toner Cartridge Is Better Than Ever.",
       image: "https://preview.colorlib.com/theme/magazine/img/f3.jpg",
       details: "Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.",
     },
   ];
+  const [first, ...rest]= popularNews
+  console.log({first, rest})
 
   return (
     <div className=" bg-white p-5">
@@ -29,7 +38,7 @@ const PopularNews = () => {
           <div className=" inset-0 bg-cover w-full h-full brightness-75 group-hover:brightness-100 transition-transform duration-300 transform scale-100 group-hover:scale-110">
             <img
               className="w-full h-48 md:h-full "
-              src="https://preview.colorlib.com/theme/magazine/img/f1.jpg"
+              src={first.image}
               alt=""
             />
           </div>
@@ -59,7 +68,7 @@ const PopularNews = () => {
 
       <div>
         <div className=" grid md:grid-cols-2 gap-5 ">
-          {popularNews.map((x) => (
+          {rest.map((x) => (
             // <div key={x?.id} className={i === 0 ? "col-span-2" : "col-span-1"}></div>
             <div key={x?.id}>
               <div className=" mt-[25px] overflow-hidden">

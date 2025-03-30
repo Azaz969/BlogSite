@@ -24,7 +24,9 @@ const RelaventStories = () => {
             </div>
 
             <div className=" flex flex-col justify-center align-middle col-span-3 p-[15px]">
-              <h2 className=" text-lg max-w-full md:max-w-[300px] font-semibold">{x.heading}</h2>
+              <Link to={`/story/${x.id}`}>
+                <h2 className=" text-lg max-w-full md:max-w-[300px] font-semibold">{x.heading}</h2>
+              </Link>
 
               <div className=" flex flex-row my-[10px] text-gray-400  text-xs font-normal">
                 <div className="flex justify-center align-middle text-center">

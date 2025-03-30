@@ -1,43 +1,26 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { FaCalendarAlt, FaRegComment } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const LatestNews = () => {
-  const latestNews = [
-    {
-      category: "Lifestyle",
-      id: "1",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/l1.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-    {
-      category: "Science",
-      id: "2",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/l2.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-    {
-      category: "Travel",
-      id: "3",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/l3.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-    {
-      category: "Fashion",
-      id: "4",
-      heading: "A Discount Toner Cartridge Is Better Than Ever.",
-      image: "https://preview.colorlib.com/theme/magazine/img/l4.jpg",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-    },
-  ];
+  const [latest, setLatest] = useState([]);
+    const fetchData = async () => {
+      const { data } = await axios.get("/relaventStories?_sort=-createdAt&_limit=4");
+      setLatest(data);
+      // const findData = data.find((item) => item.id === "1");
+      // console.log({ findData });
+    };
+
+    useEffect(() => {
+      fetchData();
+    }, []);
 
   return (
     <div className=" bg-white p-5">
       <h3 className="bg-black text-sm font-bold text-slate-50 py-[10px] px-6 ">Latest News</h3>
-      {latestNews.map((x) => (
+      {latest.map((x) => (
         <div key={x?.id}>
           <div className="grid md:grid-cols-5 md:m-5 group ">
             <div className="md:col-span-2 col-span-5 m-[5px] overflow-hidden">
@@ -68,7 +51,7 @@ const LatestNews = () => {
                 </li>
               </ul>
 
-              <p className=" text-sm text-justify text-gray-400">{x?.details}</p>
+              <p className=" text-sm text-justify text-gray-400">{x?.shortDetails}</p>
             </div>
           </div>
         </div>

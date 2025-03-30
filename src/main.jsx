@@ -11,6 +11,8 @@ import Archive from "./page/Archive.jsx";
 import Category from "./page/Category.jsx";
 import About from "./page/About.jsx";
 import Contact from "./page/Contact.jsx";
+import SingleStory from "./page/SingleStory.jsx";
+import axios from "axios";
 
 createBrowserRouter([
   {
@@ -28,27 +30,7 @@ createBrowserRouter([
   },
 ]);
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route
-//       path="/"
-//       element={
-//         <h1>
-//           {" "}
-//           hello <Outlet /> world{" "}
-//         </h1>
-//       }
-//     >
-//       <Route path="" element={<Home />} />
-//       <Route path="archive" element={<Archive />} />
-//       <Route path="category" element={<Category />} />
-//       <Route path="about" element={<About />} />
-//       <Route path="postType" element={<Home />} />
-//       <Route path="/contact" element={<Contact />} />
-//     </Route>
-//   )
-// );
-
+axios.defaults.baseURL="http://localhost:3001"
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -108,6 +90,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               element={
                 <Layout>
                   <Contact />
+                </Layout>
+              }
+            />
+            <Route
+              path="/story/:id"
+              element={
+                <Layout>
+                  <SingleStory />
                 </Layout>
               }
             />
